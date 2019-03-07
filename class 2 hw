@@ -1,0 +1,37 @@
+def isPrime(n):
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+
+    return True
+
+
+for i in range (1,101):
+    if i % 2 == 0:
+        if isPrime(i):
+            print(f'{i} Prime')
+            
+        if i % 3==0 and i %2 != 0: 
+            print(f'fizz')
+        if i % 5 ==0 and i % 2 != 0 and i % 3 != 0:
+            print(f'buzz')
+        if i % 3 ==0 and i % 5 ==0:
+            print(f'fizz buzz')
+        if not (isPrime(i)) and i % 3 != 0:
+            print (f'{i} even')
+            
+            
+    if i % 2 ==1:
+        if i >= 1:
+            if isPrime(i) and i !=1 and i % 3 !=0 and i % 5 != 0:
+                print(f'{i} Prime')
+            elif  i % 3 !=0 and i % 5 != 0:
+                print(f'{i} odd')
+        if i % 3 == 0 and i % 5 !=0:
+            print(f'fizz')
+        if i % 5 == 0 and i % 3 != 0:
+            print(f'buzz')
+        if i % 3==0 and i % 5 ==0:
+            print(f'fizzbuzz')
+        
+        
