@@ -46,3 +46,29 @@ for i in range(1,101):
         print(f'{i} odd')
 
         
+## functions
+
+def squareRoot():
+    num = (float(input('Enter a number: ')))
+    print(round(math.sqrt(num),2))
+squareRoot()
+
+def squareIt():
+    num = (float(input('Enter a number: ')))
+    print(round(math.pow(num,2),2))
+squareIt()
+
+def toTheThird():
+    num = (float(input('Enter a number: ')))
+    print(round(math.pow(num,3),2))
+toTheThird()
+
+def takeTheSin():
+    num = (float(input('Enter a number: ')))
+    print(round(math.sin(num),2))
+takeTheSin()
+
+def percent():
+    num = float(input('Enter a number: '))
+    print(num/100.0)
+percent()
