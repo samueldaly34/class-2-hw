@@ -72,3 +72,33 @@ def percent():
     num = float(input('Enter a number: '))
     print(num/100.0)
 percent()
+
+def exponent():
+    num1 = (float(input('Enter first number: ')))
+    num2 = (float(input('To the power of: ')))
+    print(round(math.pow(num1,num2),2))
+exponent()
+
+def divison():
+    num1 = float(input('Enter first number: '))
+    num2 = float(input('Enter second number: '))
+    print('The solution to ',num1,' divided by ',num2,' is ',num1/num2)
+divison()
+
+def subtraction():
+    num1 = float(input('Enter first number: '))
+    num2 = float(input('Enter second number: '))
+    print('The solution to ',num1,' minus ',num2,' is ',num1-num2)
+subtraction()   
+   
+def addition():
+    num1 = float(input('Enter first number: '))
+    num2 = float(input('Enter second number: '))
+    print('The solution to ',num1,' plus ',num2,' is ',num1+num2)
+addition()    
+    
+def multiplication():
+    num1 = float(input('Enter first number: '))
+    num2 = float(input('Enter second number: '))
+    print(f'The solution to ',num1,' multiplied by ',num2,' is ',num1*num2)
+multiplication()  
